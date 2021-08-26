@@ -6,7 +6,7 @@ services:
     container_name: flask_api
     restart: always
     build: ./api
-    volumes: ['./api']
+    volumes: ['./api:/api']
     networks:
       - apinetwork
     expose:

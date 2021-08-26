@@ -2,6 +2,7 @@ FROM python:3.6
 
 #update
 RUN apt-get update
+RUN apt-get install ffmpeg libsm6 libxext6  -y
 
 #install requirements
 COPY ./requirements.txt /tmp/requirements.txt
