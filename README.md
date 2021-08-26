@@ -5,16 +5,10 @@ To process image on Processor Image you need to send a dict with 2 parameters: "
 
 Example:
 
-{   
-    "preprocess" : "thresh",
-    "image": ....Base64 Image.... "
-}
+{   "preprocess" : "thresh", "image": ....Base64 Image.... " }
 
 It will return image cleaned and text:
 
-{
-    "img_cleaned": "...Base64 Image cleaned.....",
-    "text": " Text "
-}
+{   "img_cleaned": "...Base64 Image cleaned.....",  "text": " ...Text... " }
 
 The database have 1 Table with 3 Columns (image_in_b64 , image_out_b64 , text_out).
