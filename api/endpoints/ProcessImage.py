@@ -11,9 +11,9 @@ def process_image(image_b64_r):
     IMG_WIDTH=480
     IMG_HEIGHT=256
     
-    encoded_data = image_b64_r.split(',')[1]
+    # encoded_data = image_b64_r.split(',')[1]
     
-    img_ar=base64.b64decode(encoded_data)
+    img_ar=base64.b64decode(image_b64_r)
 
     jpg_as_np = np.frombuffer(img_ar, dtype=np.uint8)
     img = cv2.imdecode(jpg_as_np, flags=cv2.IMREAD_GRAYSCALE)
