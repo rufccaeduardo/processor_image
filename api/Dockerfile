@@ -3,6 +3,9 @@ FROM python:3.6
 #update
 RUN apt-get update
 RUN apt-get install ffmpeg libsm6 libxext6  -y
+RUN apt-get install libleptonica-dev -y
+RUN apt-get install tesseract-ocr -y
+RUN apt-get install libtesseract-dev -y
 
 #install requirements
 COPY ./requirements.txt /tmp/requirements.txt
