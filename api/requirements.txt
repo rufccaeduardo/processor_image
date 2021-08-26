@@ -3,3 +3,5 @@ gunicorn
 tensorflow==2.2.0
 opencv-python
 pytesseract
+psycopg2
+mysql-connector-python
