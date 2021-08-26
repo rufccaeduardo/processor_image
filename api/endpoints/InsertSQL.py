@@ -15,28 +15,9 @@ def insert_sql(image_in_b64,image_out_b64,text_out):
     query="INSERT INTO processor_data(image_in_b64,image_out_b64,text_out)"\
                     "VALUES(%s,%s,%s)"
     args = (str(image_in_b64),str(image_out_b64),str(text_out))
-    # try:
     conn = mysql.connector.connect(**config)
     cursor = conn.cursor()
     cursor.execute(query, args)
-
-    if cursor.lastrowid:
-        print('last insert id', cursor.lastrowid)
-    else:
-        print('last insert id not found')
-
     conn.commit()
-    # except :#Error as error:
-    #     print('error')
-
-    # finally:
     cursor.close()
     conn.close()
-
-
-            # cursor.execute(add_image_in,args)
-    # conn.commit()
-    # cursor.close()
-    # conn.close()
-    # except:
-    #     pass

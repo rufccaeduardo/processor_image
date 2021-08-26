@@ -7,8 +7,6 @@ RUN apt-get install libleptonica-dev -y
 RUN apt-get install tesseract-ocr -y
 RUN apt-get install libtesseract-dev -y
 
-# RUN DEBIAN_FRONTEND=noninteractive apt-get -y install mysql-server python-mysqldb
-
 #install requirements
 COPY ./requirements.txt /tmp/requirements.txt
 WORKDIR /tmp
