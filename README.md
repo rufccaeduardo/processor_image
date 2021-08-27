@@ -5,6 +5,8 @@ To process image on Processor Image you need to send a dict with 2 parameters: "
 
 Example:
 
+For put docker up : docker-compose up
+
 Send a POST: Http://0.0.0.0:5000/classification
 
 {   "preprocess" : "thresh", "image": ....Base64 Image.... " }
@@ -18,6 +20,8 @@ The database have 1 Table with 3 Columns (image_in_b64 , image_out_b64 , text_ou
 
 
 ## For the first time:
+
+docker-compose build
 
 Login: Http://0.0.0.0:8080
 
