@@ -17,7 +17,7 @@ The database have 1 Table with 3 Columns (image_in_b64 , image_out_b64 , text_ou
 
 
 
-## To the first time, run this on MySQL:
+## To the first time:
 
 Login: Http://0.0.0.0:8080
 
