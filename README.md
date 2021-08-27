@@ -12,3 +12,7 @@ It will return image cleaned and text:
 {   "img_cleaned": "...Base64 Image cleaned.....",  "text": " ...Text... " }
 
 The database have 1 Table with 3 Columns (image_in_b64 , image_out_b64 , text_out).
+
+
+To the first time, run this on MySQL:
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password';
