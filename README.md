@@ -5,7 +5,7 @@ To process image on Processor Image you need to send a dict with 2 parameters: "
 
 Example:
 
-Send a POST: Http:0.0.0.0:5000/classification
+Send a POST: Http://0.0.0.0:5000/classification
 
 {   "preprocess" : "thresh", "image": ....Base64 Image.... " }
 
