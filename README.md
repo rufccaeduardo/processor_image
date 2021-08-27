@@ -22,8 +22,11 @@ The database have 1 Table with 3 Columns (image_in_b64 , image_out_b64 , text_ou
 Login: Http://0.0.0.0:8080
 
 user: root
+
 password: password
+
 host: processor_image_db_1
+
 database: processor_image
 
 Import Tables : ./mysql_db/processor_data.sql.gz
