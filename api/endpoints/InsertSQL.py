@@ -1,4 +1,3 @@
-# from mysql.connector import Error
 import mysql.connector
 
 
