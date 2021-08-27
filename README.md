@@ -5,6 +5,8 @@ To process image on Processor Image you need to send a dict with 2 parameters: "
 
 Example:
 
+Send a POST: Http:0.0.0.0:5000/classification
+
 {   "preprocess" : "thresh", "image": ....Base64 Image.... " }
 
 It will return image cleaned and text:
@@ -14,5 +16,19 @@ It will return image cleaned and text:
 The database have 1 Table with 3 Columns (image_in_b64 , image_out_b64 , text_out).
 
 
-To the first time, run this on MySQL:
+
+## To the first time, run this on MySQL:
+
+Login: Http://0.0.0.0:8080
+
+user: root
+password: password
+host: processor_image_db_1
+database: processor_image
+
+Import Tables : ./mysql_db/processor_data.sql.gz
+
+And run this:
+
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password';
+
